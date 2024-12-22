@@ -17,18 +17,19 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
+@AllArgsConstructor
 @NoArgsConstructor
-public class Test {
+public class Tests {
 
-    public Test(String col1) {
-        this.col1 = col1;
-    }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column
     private String col1;
+    public Tests(String col1) {
+        this.col1 = col1;
+    }
 
     @Override
     public String toString() {

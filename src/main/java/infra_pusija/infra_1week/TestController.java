@@ -22,9 +22,9 @@ public class TestController {
     }
 
     @GetMapping("/test")
-    public List<Test> getMethodName() {
-        List<Test> tests = testRepo.findAll();
-        for (Test t : tests) {
+    public List<Tests> getMethodName() {
+        List<Tests> tests = testRepo.findAll();
+        for (Tests t : tests) {
             t.toString();
         }
         return tests;
@@ -32,7 +32,7 @@ public class TestController {
 
     @GetMapping("/go")
     public ResponseEntity<Void> getGo() {
-        Test test = new Test("goo");
+        Tests test = new Tests("goo");
         testRepo.save(test);
         return new ResponseEntity<>(HttpStatus.OK);
     }
