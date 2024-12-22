@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:232205549174:task-definition/ecs-practice-task:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:232205549174:task-definition/ecs-practice-task",
     "containerDefinitions": [
         {
             "name": "prac-container",
@@ -84,7 +84,5 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-12-22T07:44:42.258Z",
-    "registeredBy": "arn:aws:iam::232205549174:root",
     "tags": []
 }
